@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-03T00:00:00Z",
+  "parsers": [
+    {
+      "id": "zhengfang-generic",
+      "name": "正方教务系统（通用）",
+      "author": "UniDay",
+      "schedulePagePatterns": [
+        "*/kbcx/xskbcx_cxXskbcxIndex*",
+        "*/kbcx/xskbcx_cxXsKb*"
+      ],
+      "scriptPath": "parsers/zhengfang-generic.js",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0"
+    },
+    {
+      "id": "jsxsd-generic",
+      "name": "强智教务系统（通用）",
+      "author": "UniDay",
+      "schedulePagePatterns": ["*/jsxsd/xskb/xskb_list*"],
+      "scriptPath": "parsers/sdjzu-jsxsd.js",
+      "version": "1.0.0",
+      "minAppVersion": "1.0.0"
+    }
+  ],
+  "schools": [
+    {
+      "id": "sdjzu",
+      "name": "山东建筑大学",
+      "parserID": "jsxsd-generic",
+      "loginURL": "https://xjwgl.sdjzu.edu.cn"
+    }
+  ]
+}
